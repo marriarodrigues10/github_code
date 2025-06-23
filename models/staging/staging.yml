@@ -5,5 +5,4 @@ sources:
       schema: STAGING
       tables:
         - name: raw_customer_data
-
         - name: raw_customer_order
