@@ -5,3 +5,6 @@ sources:
       schema: DBT_DEV
       tables:
         - name: CUSTOMERS
+        - name: CUSTOMERS2
+        - name: customers_snaps
+        

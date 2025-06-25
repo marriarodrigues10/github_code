@@ -3,4 +3,4 @@
          
 ) }}
 
-select * from {{source('datafeed_shared_schema','CUSTOMERS')}} 
+select * from {{source('datafeed_shared_schema','CUSTOMERS2')}} 
