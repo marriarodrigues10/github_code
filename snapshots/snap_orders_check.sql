@@ -3,10 +3,10 @@
 
     {{
         config(
-          target_schema='snapshots',
+          target_schema='snaps2',         
           strategy='check',
           unique_key='ID',
-          check_cols=['first_name','last_name'],
+          check_cols=['first_name','last_name']
         )
     }}
 

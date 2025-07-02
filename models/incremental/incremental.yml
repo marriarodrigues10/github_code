@@ -5,6 +5,20 @@ sources:
       schema: DBT_DEV
       tables:
         - name: CUSTOMERS
+          columns:
+          - name: ID
+            description: "The primary key for this table"
+            tests:
+              - unique 
         - name: CUSTOMERS2
+          columns:
+          - name: ID
+            description: "The primary key for this table"
+            tests:
+              - relationships:
+                  to: 'prod.dbt_dev.INSERT_OVERWRITE'
+                  field: ID 
+
+
         - name: customers_snaps
-        
+        - name: emp_tax

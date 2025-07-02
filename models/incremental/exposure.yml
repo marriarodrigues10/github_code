@@ -1,0 +1,21 @@
+version: 2
+
+
+exposures:
+
+  - name: weekly_metrics
+    label: saisri by the Week
+    type: dashboard
+    maturity: high
+    description: 
+     For more exposure about project details
+
+    depends_on:
+      - ref('MERGE')
+      - source('datafeed_shared_schema','CUSTOMERS')
+      - test('orders_test')
+      - ref('snap_orders_check')
+  
+    owner:
+      name:  maria rodrigues
+      email: marria.rodrigues.10@gmail.com
